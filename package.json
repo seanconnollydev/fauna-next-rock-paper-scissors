@@ -1,0 +1,51 @@
+{
+  "name": "@goldenshun/test-1",
+  "version": "0.0.1",
+  "description": "test-1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm run gen:gql",
+    "build": "next build",
+    "gen:gql": "dotenv -c -- graphql-codegen",
+    "predev": "npm run gen:gql",
+    "dev": "next",
+    "fauna": "fauna-gql",
+    "fauna:override": "fauna-gql --override",
+    "lint": "eslint --ext .js .",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenshun/test-1.git"
+  },
+  "author": "Sean Connolly",
+  "license": "MIT",
+  "homepage": "https://github.com/goldenshun/test-1#readme",
+  "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "faunadb-fql-lib": "^0.12.1",
+    "graphql": "^15.4.0",
+    "next": "^10.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.19.2",
+    "@graphql-codegen/introspection": "^1.18.0",
+    "@graphql-codegen/typescript": "^1.17.11",
+    "@graphql-codegen/typescript-operations": "^1.17.10",
+    "@graphql-codegen/typescript-react-apollo": "^2.1.1",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "dotenv-cli": "^4.0.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fauna-gql-upload": "^1.9.0",
+    "faunadb": "^4.0.0",
+    "next-with-apollo": "^5.1.0",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2"
+  }
+}

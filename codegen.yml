@@ -1,0 +1,13 @@
+schema:
+  - https://graphql.fauna.com/graphql:
+      headers:
+        Authorization: Bearer ${FAUNA_ACCESS_KEY_ADMIN}
+documents: "{components,lib}/**/*.graphql"
+generates:
+  ./.gen/graphql.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+config:
+  preResolveTypes: true

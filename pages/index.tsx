@@ -1,8 +1,8 @@
-import Example from "@components/Example";
+import RockPaperScissors from "@components/RockPaperScissors";
 import { FunctionComponent } from "react";
 
 const Index: FunctionComponent = () => {
-  return <Example />;
+  return <RockPaperScissors />;
 };
 
 export default Index;

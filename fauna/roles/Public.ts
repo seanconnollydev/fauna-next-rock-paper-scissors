@@ -1,5 +1,5 @@
 import { query } from "faunadb";
-const { Collection } = query;
+const { Collection, Function } = query;
 
 const Public = {
   name: "Public",
@@ -10,6 +10,12 @@ const Public = {
         read: true,
         create: true,
         delete: false,
+      },
+    },
+    {
+      resource: Function("play"),
+      actions: {
+        call: true,
       },
     },
   ],

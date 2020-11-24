@@ -1,0 +1,7 @@
+query Play($selection: Selection!) {
+  play(selection: $selection) {
+    selection
+    opponentSelection
+    message
+  }
+}

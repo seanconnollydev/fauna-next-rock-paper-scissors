@@ -1,7 +1,6 @@
 import type { AppProps } from "next/app";
-import Head from 'next/head';
+import Head from "next/head";
 import withApollo from "@components/withApollo";
-import theme from "@lib/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

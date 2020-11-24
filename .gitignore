@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.local
+
+# Next.js build output
+.next
+
+# Code Gen
+.gen/
+
+# Whatever this is
+.DS_Store
